@@ -2,17 +2,16 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sobre mí</title>
-    <link rel="preload" href="CSS/normalize.css" as="style">
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="preload" href="CSS/styles.css" as="style">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="preload" href="CSS/normalize.css" as="style" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="preload" href="CSS/styles.css" as="style" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -20,113 +19,335 @@
         <h1>ISC. Juan Manuel Rios Estrada</h1>
     </header>
 
-    <div class="nav-bg">
-        <nav class="navegacion-principal contenedor">
-            <a href="index.html">Inicio</a>
-            <a href="sobre-mi.html">Sobre mí</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="#">Clientes</a>
-        </nav>
-    </div>
+    <nav class="nav-bg navegacion-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-mi.html" aria-current="page">Sobre mí</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="#">Clientes</a>
+    </nav>
 
     <main class="contenedor sombra">
-        <section class="perfil">
-            <h2>
+        <section class="perfil" aria-labelledby="titulo-perfil">
+            <h2 id="titulo-perfil">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" stroke="#000" fill="none"
                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icon-tabler-user">
+                    class="icon icon-tabler icon-tabler-user" aria-hidden="true" focusable="false">
                     <path stroke="none" d="M0 0h24v24H0z" />
                     <circle cx="12" cy="7" r="4" />
                     <path d="M5.5 21a9 9 0 0 1 13 0" />
-                </svg> Sobre mí
+                </svg>
+                Sobre mí
             </h2>
-            <div class="foto-perfil"></div>
 
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icon-tabler-id">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <rect x="3" y="4" width="18" height="16" rx="2" />
-                    <circle cx="9" cy="10" r="2" />
-                    <path d="M15 8h2" />
-                    <path d="M15 12h2" />
-                </svg>
-                <strong>Nombre:</strong> ISC. Juan Manuel Rios Estrada
-            </p>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icon-tabler-calendar">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <rect x="4" y="5" width="16" height="16" rx="2" />
-                    <line x1="16" y1="3" x2="16" y2="7" />
-                    <line x1="8" y1="3" x2="8" y2="7" />
-                    <line x1="4" y1="11" x2="20" y2="11" />
-                </svg>
-                <strong>Edad:</strong> 21 años
-            </p>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icon-tabler-mail">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <path d="M3 7l9 6l9 -6" />
-                    <path d="M21 7v10a2 2 0 0 1 -2 2H5a2 2 0 0 1 -2 -2V7" />
-                </svg>
-                <strong>Correo:</strong> up210710@alumnos.upa.edu.mx
-            </p>
+            <div class="foto-perfil" role="img" aria-label="Foto de perfil de Juan Manuel Rios Estrada"></div>
 
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icon-tabler-laptop">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <rect x="3" y="4" width="18" height="12" rx="1" />
-                    <path d="M3 20h18" />
-                    <path d="M6 16v4" />
-                    <path d="M18 16v4" />
-                </svg>
-                <strong>Carrera:</strong> Ingeniería en Sistemas Computacionales
-            </p>
+            <dl>
+                <dt>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icon-tabler-id" aria-hidden="true" focusable="false">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <rect x="3" y="4" width="18" height="16" rx="2" />
+                        <circle cx="9" cy="10" r="2" />
+                        <path d="M15 8h2" />
+                        <path d="M15 12h2" />
+                    </svg>
+                    Nombre:
+                </dt>
+                <dd>ISC. Juan Manuel Rios Estrada</dd>
 
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icon-tabler-map-pin">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <circle cx="12" cy="11" r="3" />
-                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
-                </svg>
-                <strong>Ubicación:</strong> Aguascalientes, Ags.
-            </p>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icon-tabler-briefcase">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <rect x="3" y="7" width="18" height="14" rx="2" />
-                    <path d="M7 7V5a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v2" />
-                    <line x1="10" y1="11" x2="14" y2="11" />
-                </svg>
-                <strong>Ocupación:</strong> Estudiante
-            </p>
-            <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
-                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icon-tabler-heart">
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <path
-                        d="M12 21c-4.418 0 -8 -3.582 -8 -8c0 -4.418 3.582 -8 8 -8c4.418 0 8 3.582 8 8c0 4.418 -3.582 8 -8 8z" />
-                    <path
-                        d="M12 21l-1 -1a5.5 5.5 0 0 1 -7.778 -7.778l1 -1a5.5 5.5 0 0 1 7.778 0l1 1l1 -1a5.5 5.5 0 0 1 7.778 7.778l-1 1a5.5 5.5 0 0 1 -7.778 0z" />
-                </svg>
-                <strong>Sobre mí:</strong> Soy un estudiante de Ingeniería en Sistemas enfocado en el desarrollo web y
-                el
-                diseño de software. Me apasiona crear soluciones digitales eficientes y atractivas. Siempre estoy enfocado en
-                aprender nuevos conocimientos los cuales me ayuden a mejorar mis habilidades y aportar valor a los proyectos en los que participo.
-            </p>
-        </section>
+                <dt>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icon-tabler-calendar" aria-hidden="true" focusable="false">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <rect x="4" y="5" width="16" height="16" rx="2" />
+                        <line x1="16" y1="3" x2="16" y2="7" />
+                        <line x1="8" y1="3" x2="8" y2="7" />
+                        <line x1="4" y1="11" x2="20" y2="11" />
+                    </svg>
+                    Edad:
+                </dt>
+                <dd>21 años</dd>
+
+                <dt>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icon-tabler-mail" aria-hidden="true" focusable="false">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path d="M3 7l9 6l9 -6" />
+                        <path d="M21 7v10a2 2 0 0 1 -2 2H5a2 2 0 0 1 -2 -2V7" />
+                    </svg>
+                    Correo:
+                </dt>
+                <dd><a href="mailto:up210710@alumnos.upa.edu.mx">up210710@alumnos.upa.edu.mx</a></dd>
+
+                <dt>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icon-tabler-laptop" aria-hidden="true" focusable="false">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <rect x="3" y="4" width="18" height="12" rx="1" />
+                        <path d="M3 20h18" />
+                        <path d="M6 16v4" />
+                        <path d="M18 16v4" />
+                    </svg>
+                    Carrera:
+                </dt>
+                <dd>Ingeniería en Sistemas Computacionales</dd>
+
+                <dt>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icon-tabler-map-pin" aria-hidden="true" focusable="false">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <circle cx="12" cy="11" r="3" />
+                        <path
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                    </svg>
+                    Ubicación:
+                </dt>
+                <dd>Aguascalientes, Ags.</dd>
+
+                <dt>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="#000" fill="none"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icon-tabler-briefcase" aria-hidden="true" focusable="false">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <rect x="3" y="7" width="18" height="14" rx="2" />
+                        <path d="M7 7V5a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v2" />
+                        <line x1="10" y1="11" x2="14" y2="11" />
+                    </svg>
+                    Ocupación:
+                </dt>
+                <dd>Estudiante</dd>
+            </dl>
+
+            <section aria-labelledby="sobre-mi-texto">
+                <h3 id="sobre-mi-texto">Sobre mí</h3>
+                <p>
+                    Soy un estudiante de Ingeniería en Sistemas enfocado en el desarrollo web y el diseño de software.
+                    Me apasiona crear soluciones digitales eficientes y atractivas. Siempre estoy enfocado en aprender
+                    nuevos conocimientos los cuales me ayuden a mejorar mis habilidades y aportar valor a los proyectos
+                    en los que participo.
+                </p>
+            </section>
+
+            <section aria-labelledby="pasatiempos">
+                <h3 id="pasatiempos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true" focusable="false">
+                        <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                        <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                        <path
+                            d="M15.5 17c0 1 0 3 -3.5 3s-3.5-2-3.5-3v-2c0-1 2-2 3.5-2s3.5 1 3.5 2v2zM12 3.5a4.5 4.5 0 0 1 4.5 4.5M12 3.5a4.5 4.5 0 0 0 -4.5 4.5" />
+                    </svg>
+                    Pasatiempos
+                </h3>
+
+                <p>
+                    Mis pasatiempos incluyen ver series, películas y anime. Algunos ejemplos de los que he visto y que
+                    me han gustado mucho son:
+                </p>
+
+                <section class="gustos-section">
+                    <h4>🎥 Películas Favoritas</h4>
+                    <ul>
+                        <li class="gusto-icon peliculas">Cómo entrenar a tu dragón (trilogía)</li>
+                        <li class="gusto-icon peliculas">Kung Fu Panda 1, 2, 3 y 4</li>
+                        <li class="gusto-icon peliculas">Spiderman: Into the Spider-Verse</li>
+                        <li class="gusto-icon peliculas">Spiderman: Across the Spider-Verse</li>
+                        <li class="gusto-icon peliculas">¿Qué pasó ayer? (trilogía)</li>
+                        <li class="gusto-icon peliculas">Alien: El octavo pasajero</li>
+                        <li class="gusto-icon peliculas">Alien: El regreso</li>
+                        <li class="gusto-icon peliculas">La máscara</li>
+                        <li class="gusto-icon peliculas">El gato con botas</li>
+                        <li class="gusto-icon peliculas">El gato con botas: El último deseo</li>
+                        <li class="gusto-icon peliculas">Shrek 1 y 2</li>
+                        <li class="gusto-icon peliculas">Sonic (trilogía)</li>
+                        <li class="gusto-icon peliculas">Harry Potter (saga completa)</li>
+                        <li class="gusto-icon peliculas">Phineas y Ferb: A través de la segunda dimensión</li>
+                        <li class="gusto-icon peliculas">Bob Esponja: La película</li>
+                        <li class="gusto-icon peliculas">Así en la Tierra como en el Infierno</li>
+                        <li class="gusto-icon peliculas">El payaso del mal</li>
+                        <li class="gusto-icon peliculas">Evil Dead: El despertar</li>
+                        <li class="gusto-icon peliculas">[•REC] 1 y 2</li>
+                        <li class="gusto-icon peliculas">Rango</li>
+                        <li class="gusto-icon peliculas">Ted 1 y 2</li>
+                    </ul>
+                </section>
+
+                <section class="gustos-section">
+                    <h4>📺 Series Animadas y Live-Action</h4>
+                    <ul>
+                        <li class="gusto-icon series">Peacemaker</li>
+                        <li class="gusto-icon series">Ben 10</li>
+                        <li class="gusto-icon series">Ben 10: Alien Force</li>
+                        <li class="gusto-icon series">Ben 10: Ultimate Alien</li>
+                        <li class="gusto-icon series">Scooby-Doo! Misterios S.A.</li>
+                        <li class="gusto-icon series">The Last of Us</li>
+                        <li class="gusto-icon series">Teen Titans</li>
+                        <li class="gusto-icon series">Un show más</li>
+                        <li class="gusto-icon series">Stranger Things</li>
+                        <li class="gusto-icon series">El Tigre: Las aventuras de Manny Rivera</li>
+                        <li class="gusto-icon series">Los Padrinos Mágicos</li>
+                        <li class="gusto-icon series">Jimmy Neutrón: El niño genio</li>
+                        <li class="gusto-icon series">Danny Phantom</li>
+                        <li class="gusto-icon series">The Big Bang Theory</li>
+                        <li class="gusto-icon series">The Boys</li>
+                        <li class="gusto-icon series">Malcolm el de en medio</li>
+                        <li class="gusto-icon series">Invencible</li>
+                        <li class="gusto-icon series">Smiling Friends</li>
+                        <li class="gusto-icon series">Samurai Jack</li>
+                        <li class="gusto-icon series">Hora de Aventura</li>
+                        <li class="gusto-icon series">Las Tortugas Ninja (2012)</li>
+                        <li class="gusto-icon series">Avatar: La leyenda de Aang</li>
+                        <li class="gusto-icon series">Gravity Falls</li>
+                        <li class="gusto-icon series">Los Vengadores: Los héroes más poderosos del planeta</li>
+                        <li class="gusto-icon series">Fallout</li>
+                        <li class="gusto-icon series">Los pingüinos de Madagascar</li>
+                        <li class="gusto-icon series">Sonic Prime</li>
+                        <li class="gusto-icon series">Phineas y Ferb</li>
+                        <li class="gusto-icon series">Inside Job</li>
+                        <li class="gusto-icon series">Rick y Morty</li>
+                        <li class="gusto-icon series">Drake y Josh</li>
+                        <li class="gusto-icon series">El increíble mundo de Gumball</li>
+                    </ul>
+                </section>
+
+                <section class="gustos-section">
+                    <h4>🎌 Anime</h4>
+                    <ul>
+                        <li class="gusto-icon anime">Solo Leveling</li>
+                        <li class="gusto-icon anime">Demon Slayer</li>
+                        <li class="gusto-icon anime">One Piece</li>
+                        <li class="gusto-icon anime">Naruto</li>
+                        <li class="gusto-icon anime">Naruto Shippuden</li>
+                        <li class="gusto-icon anime">Mushoku Tensei: Jobless Reincarnation</li>
+                        <li class="gusto-icon anime">Re:Zero - Starting Life in Another World</li>
+                        <li class="gusto-icon anime">Haikyuu!!</li>
+                        <li class="gusto-icon anime">Neon Genesis Evangelion</li>
+                        <li class="gusto-icon anime">Dragon Ball</li>
+                        <li class="gusto-icon anime">Dragon Ball Z</li>
+                        <li class="gusto-icon anime">Dragon Ball Super</li>
+                        <li class="gusto-icon anime">Attack on Titan</li>
+                        <li class="gusto-icon anime">Devil May Cry</li>
+                        <li class="gusto-icon anime">Death Note</li>
+                        <li class="gusto-icon anime">Overlord</li>
+                        <li class="gusto-icon anime">My Hero Academia</li>
+                        <li class="gusto-icon anime">JoJo’s Bizarre Adventure</li>
+                        <li class="gusto-icon anime">Fullmetal Alchemist</li>
+                        <li class="gusto-icon anime">Fullmetal Alchemist: Brotherhood</li>
+                        <li class="gusto-icon anime">Cyberpunk: Edgerunners</li>
+                        <li class="gusto-icon anime">Black Clover</li>
+                        <li class="gusto-icon anime">Sword Art Online</li>
+                        <li class="gusto-icon anime">Kaguya-sama: Love is War</li>
+                        <li class="gusto-icon anime">Jujutsu Kaisen</li>
+                        <li class="gusto-icon anime">Nanatsu no Taizai</li>
+                        <li class="gusto-icon anime">Nanatsu no Taizai: Mokushiroku no Yonkishi</li>
+                        <li class="gusto-icon anime">Chainsaw Man</li>
+                        <li class="gusto-icon anime">Spy x Family</li>
+                        <li class="gusto-icon anime">Komi-san no puede comunicarse</li>
+                        <li class="gusto-icon anime">Arcane</li>
+                        <li class="gusto-icon anime">Berserk</li>
+                        <li class="gusto-icon anime">Scott Pilgrim</li>
+                    </ul>
+                </section>
+
+                <section class="reflexion-final">
+                    <p>
+                        Estas películas, series y animes me han acompañado en distintas etapas de mi vida. Cada uno me
+                        dejó recuerdos,
+                        emociones y enseñanzas que, en conjunto, me han ayudado a llegar hasta donde estoy hoy. Son
+                        parte importante
+                        de lo que soy.
+                    </p>
+                </section>
+
+                <section class="gustos-section">
+                    <h4>🎮 Videojuegos</h4>
+                    <p>
+                        Otro de mis grandes pasatiempos es jugar videojuegos. A veces me entusiasmo tanto que termino
+                        superando mis
+                        propios límites y me vuelvo un poco adicto. Sin embargo, disfruto mucho de esta actividad, ya
+                        que me ha acompañado
+                        en muchas etapas de mi vida.
+                    </p>
+
+                    <p>Algunos de los videojuegos que más me han marcado y disfrutado son:</p>
+
+                    <ul>
+                        <li class="gusto-icon videojuego">Ratchet & Clank – Toda la saga, incluyendo el remake y Ratchet
+                            & Clank: Rift Apart.</li>
+                        <li class="gusto-icon videojuego">God of War – Especialmente las entregas 2 y 3.</li>
+                        <li class="gusto-icon videojuego">Jak and Daxter – Jak and Daxter, Jak II: El renegado y Jak 3.
+                        </li>
+                        <li class="gusto-icon videojuego">The Last of Us – Parte I y Parte II.</li>
+                        <li class="gusto-icon videojuego">Uncharted – Drake's Fortune, Among Thieves, Drake’s Deception
+                            y A Thief’s End.</li>
+                        <li class="gusto-icon videojuego">Spiderman – Spiderman (2018), Miles Morales y Spiderman 2.
+                        </li>
+                        <li class="gusto-icon videojuego">Grand Theft Auto V, Metal Gear Solid 2: Sons of Liberty.</li>
+                        <li class="gusto-icon videojuego">FromSoftware – Dark Souls Remastered, Dark Souls III, Demon’s
+                            Souls Remake, Bloodborne, Sekiro: Shadows Die Twice, Elden Ring.</li>
+                        <li class="gusto-icon videojuego">Subnautica – Subnautica y Below Zero.</li>
+                        <li class="gusto-icon videojuego">Call of Duty: Black Ops Zombies – Especialmente las entregas
+                            Black Ops, 2, 3 y 6.</li>
+                        <li class="gusto-icon videojuego">
+                            Otros títulos memorables: Lies of P, Grounded, Sifu, ARK, Another Crab’s Treasure, Resident
+                            Evil 2, 3 y 4 (remakes), Firewatch,
+                            High On Life, Dead Space, Hello Neighbor 1 y 2, Naruto Shippuden: Ultimate Ninja Storm 4,
+                            Alien Isolation, Pokémon Sword,
+                            Pokémon Scarlet, Zelda: Breath of the Wild, Zelda: Tears of the Kingdom, Super Mario Wii U,
+                            Super Mario Wonder,
+                            Super Mario 3D World, Mario Party Superstars, Super Mario Jamboree, Mario Party 8, Mario
+                            Kart 8, Cuphead, Smash Ultimate,
+                            Fortnite, My Hero Ultra Rumble.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Al igual que con las películas, series y animes, los videojuegos me han acompañado en momentos
+                        tanto felices como
+                        tristes. Cada título tiene algo especial: historias profundas, jugabilidad desafiante o
+                        simplemente horas de diversión.
+                    </p>
+                    <p>
+                        Además, jugar con amigos o familiares es una forma para mí de fortalecer nuestros lazos y crear
+                        recuerdos inolvidables.
+                    </p>
+                </section>
+
+                <section class="gustos-section">
+                    <h4>🎵 Música</h4>
+                    <p>
+                        La música es otra gran pasión en mi vida. Me gusta escuchar diversos géneros, desde pop, rock,
+                        hasta música electrónica
+                        y bandas sonoras. Algunos de mis artistas y grupos favoritos incluyen:
+                    </p>
+
+                    <ul>
+                        <li class="gusto-icon musica">Michael Jackson</li>
+                        <li class="gusto-icon musica">Queen</li>
+                        <li class="gusto-icon musica">Linkin Park</li>
+                        <li class="gusto-icon musica">Eminem</li>
+                        <li class="gusto-icon musica">Imagine Dragons</li>
+                        <li class="gusto-icon musica">Coldplay</li>
+                        <li class="gusto-icon musica">Billie Eilish</li>
+                        <li class="gusto-icon musica">Twenty One Pilots</li>
+                        <li class="gusto-icon musica">Lorde</li>
+                        <li class="gusto-icon musica">Daft Punk</li>
+                    </ul>
+
+                    <p>
+                        La música me inspira, me relaja y me ayuda a concentrarme mientras estudio o trabajo. También es
+                        una manera de conectar
+                        con mis emociones y expresar quién soy.
+                    </p>
+                </section>
+            </section>
+
     </main>
 
     <footer class="footer">
